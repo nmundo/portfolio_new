@@ -27,9 +27,9 @@ function Home(props) {
     const { classes } = props;
     return (
         <div className="main-content">
-            <Grid container justify="center" alignItems="center" style={{height: "100%"}}>
-                <Grid item xs={10} sm={3}>
-                    <Avatar alt="Picture of Nathan" src={profile_image} className={classes.profile} />
+            <Grid container justify="center" alignItems="center" style={{height: "100%"}} spacing={0}>
+                <Grid item xs={10} sm={3} justify="center">
+                    <Avatar alt="Picture of Nathan" src={profile_image} className="profile"/>
                 </Grid>
                 <Grid item xs={10} sm={4}>
                     <Typography variant="display3" color="secondary" style={{textAlign: "center"}} gutterBottom>

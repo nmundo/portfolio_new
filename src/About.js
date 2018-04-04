@@ -18,8 +18,8 @@ function About(props) {
     const { classes } = props;
     return (
         <div className="main-content">
-            <Grid container alignItems="center" style={{height: "100%"}}>
-                <Grid container justify="center">
+            <Grid container alignItems="center" style={{height: "100%"}} spacing={0}>
+                <Grid container justify="center" spacing={0}>
                     <Grid item xs={10} sm={2}>
                         <Typography variant="display1" color="secondary" gutterBottom>
                             ABOUT ME
@@ -32,30 +32,37 @@ function About(props) {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container justify="center">
+                <Grid container justify="center" spacing={0}>
                     <Grid item xs={10} sm={2}>
                         <Typography variant="display1" color="secondary" gutterBottom>
                             SKILLS
                         </Typography>
                     </Grid>
-                    <Grid container xs={10} sm={6}>
+                    <Grid container xs={10} sm={6} justify="center">
                         <Grid item>
-                            <ul className="skills">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
+                            <Typography variant="headline" gutterBottom>
+                                <ul className="skills">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </Typography>
                         </Grid>
                         <Grid item>
-                            <ul className="skills">
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>React Native</li>
-                            </ul>
+                            <Typography variant="headline" gutterBottom>
+                                <ul className="skills">
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>React Native</li>
+                                </ul>
+                            </Typography>
                         </Grid>
                         <Grid item>
-                            <ul className="skills">
-                                <li>Python</li>
-                            </ul>
+                            <Typography variant="headline" gutterBottom>
+                                <ul className="skills">
+                                    <li>Python</li>
+                                    <li>Swift</li>
+                                </ul>
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>

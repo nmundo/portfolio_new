@@ -55,19 +55,12 @@ class App extends Component {
                         <MuiThemeProvider theme={theme}>
                             <div className="App">
                                 <MenuBar/>
-                                <div className="main-content">
-                                    <TransitionGroup>
-                                        <CSSTransition key={location.key} classNames="fade" timeout={300}>
-                                            <Switch location={location}>
-                                                <Route exact path="/" component={Home}/>
-                                                <Route path="/about" component={About}/>
-                                                <Route path="/projects" component={Projects}/>
-                                                <Route path="/contact" component={Contact}/>
-                                                <Route render={() => <div>Not Found</div>} />
-                                            </Switch>
-                                        </CSSTransition>
-                                    </TransitionGroup>
-                                </div>
+                                <Switch location={location}>
+                                    <Route exact path="/" component={Home}/>
+                                    <Route path="/about" component={About}/>
+                                    <Route path="/projects" component={Projects}/>
+                                    <Route render={() => <div>Not Found</div>}/>
+                                </Switch>
                             </div>
                         </MuiThemeProvider>
                     )}/>
