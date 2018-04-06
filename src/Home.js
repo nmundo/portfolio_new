@@ -7,8 +7,8 @@ import Typography from 'material-ui/Typography';
 import profile_image from './profile.jpg';
 import github_logo from './img/GitHub-Mark-120px-plus.svg';
 import linkedin_logo from './img/LinkedIn-logo.ico';
+import resume_logo from './img/resume-logo.png';
 import Avatar from 'material-ui/Avatar';
-import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 const styles = {
     root: {
@@ -47,6 +47,11 @@ function Home(props) {
                         <Grid item>
                             <a href="https://www.linkedin.com/in/hmundo/">
                                 <img src={linkedin_logo} className="social-icon"/>
+                            </a>
+                        </Grid>
+                        <Grid item>
+                            <a href="https://drive.google.com/file/d/1I4kNWVyffYXGwSvo-emV2-OiCpvulaEV/view?usp=sharing">
+                                <img src={resume_logo} className="social-icon"/>
                             </a>
                         </Grid>
                     </Grid>

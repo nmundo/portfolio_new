@@ -19,7 +19,7 @@ function MenuBar(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="primary">
+            <AppBar position="static" color="primary" style={{boxShadow: "none"}}>
                 <Toolbar style={{justifyContent: "center"}}>
                     <Button color="inherit" component={Link} to="/">Home</Button>
                     <Button color="inherit" component={Link} to="/about">About</Button>
