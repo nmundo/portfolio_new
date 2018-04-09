@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-116912600-1');
+ReactGA.initialize('UA-40058410-2');
 
 
 ReactGA.pageview(window.location.pathname + window.location.search);
