@@ -4,6 +4,11 @@ import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
+import html_logo from './img/html.png';
+import react_logo from './img/react.png';
+import python_logo from './img/python.png';
+import css_logo from './img/css.png';
+import javascript_logo from './img/javascript.png';
 
 const styles = {
     root: {
@@ -40,29 +45,19 @@ function About(props) {
                     </Grid>
                     <Grid container xs={10} sm={6} justify="center">
                         <Grid item>
-                            <Typography variant="headline" gutterBottom>
-                                <ul className="skills">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </Typography>
+                            <img src={html_logo} className="skill-icon"/>
                         </Grid>
                         <Grid item>
-                            <Typography variant="headline" gutterBottom>
-                                <ul className="skills">
-                                    <li>JavaScript</li>
-                                    <li>React</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </Typography>
+                            <img src={css_logo} className="skill-icon"/>
                         </Grid>
                         <Grid item>
-                            <Typography variant="headline" gutterBottom>
-                                <ul className="skills">
-                                    <li>Python</li>
-                                    <li>Swift</li>
-                                </ul>
-                            </Typography>
+                            <img src={javascript_logo} className="skill-icon"/>
+                        </Grid>
+                        <Grid item>
+                            <img src={react_logo} className="skill-icon"/>
+                        </Grid>
+                        <Grid item>
+                            <img src={python_logo} className="skill-icon"/>
                         </Grid>
                     </Grid>
                 </Grid>

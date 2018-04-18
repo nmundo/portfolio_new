@@ -32,6 +32,7 @@ body {
     height: 20vw !important;
     min-width: 100px;
     min-height: 100px;
+    margin: 0 auto;
 }
 
 .social-icon {
@@ -43,4 +44,10 @@ body {
     list-style-type: none;
     padding: 10px;
     margin: 0;
+}
+
+.skill-icon {
+    max-height: 130px;
+    height: 20vmin;
+    padding: 15px;
 }
