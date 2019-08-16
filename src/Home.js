@@ -50,7 +50,7 @@ function Home(props) {
                             </a>
                         </Grid>
                         <Grid item>
-                            <a href="https://drive.google.com/file/d/1I4kNWVyffYXGwSvo-emV2-OiCpvulaEV/view?usp=sharing">
+                            <a href="https://drive.google.com/open?id=1jyE7kwyaTWwQD0xq418lZr5vEKbK0MNB">
                                 <img src={resume_logo} className="social-icon"/>
                             </a>
                         </Grid>

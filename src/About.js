@@ -8,7 +8,6 @@ import html_logo from './img/html.png';
 import react_logo from './img/react.png';
 import python_logo from './img/python.png';
 import css_logo from './img/css.png';
-import javascript_logo from './img/javascript.png';
 
 const styles = {
     root: {
@@ -32,8 +31,7 @@ function About(props) {
                     </Grid>
                     <Grid item xs={10} sm={6}>
                         <Typography variant="headline" gutterBottom>
-                            Almost 3 years of experience working with web technologies in corporate environments;
-                            a lifetime of experience working with web technologies elsewhere.
+                            Full stack developer. Mainly working with React and Oracle PL/SQL. Like to play with Python. Over 5 years of experience as a developer.
                         </Typography>
                     </Grid>
                 </Grid>
@@ -43,21 +41,21 @@ function About(props) {
                             SKILLS
                         </Typography>
                     </Grid>
-                    <Grid container xs={10} sm={6} justify="center">
-                        <Grid item>
-                            <img src={html_logo} className="skill-icon"/>
+                    <Grid container xs={10} sm={6}>
+                        <Grid item xs={4}>
+                            <Typography variant='headline'>HTML</Typography>
+                            <Typography variant='headline'>CSS</Typography>
+                            <Typography variant='headline'>JavaScript</Typography>
                         </Grid>
-                        <Grid item>
-                            <img src={css_logo} className="skill-icon"/>
+                        <Grid item xs={4}>
+                            <Typography variant='headline'>React</Typography>
+                            <Typography variant='headline'>Node</Typography>
+                            <Typography variant='headline'>Flask</Typography>
                         </Grid>
-                        <Grid item>
-                            <img src={javascript_logo} className="skill-icon"/>
-                        </Grid>
-                        <Grid item>
-                            <img src={react_logo} className="skill-icon"/>
-                        </Grid>
-                        <Grid item>
-                            <img src={python_logo} className="skill-icon"/>
+                        <Grid item xs={4}>
+                            <Typography variant='headline'>Oracle SQL</Typography>
+                            <Typography variant='headline'>PL/SQL</Typography>
+                            <Typography variant='headline'>Python</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
